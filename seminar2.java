@@ -111,11 +111,71 @@
 // Sample Output 3:
 // NO
 
-package java
+package s2;
 
 public class seminar2 {
+    public static void main(String[] args) {
+        String ip="255.00.255.255";
+        String
+    }
 
+
+public class Main {    
+    public static void main(String[] args) {        
+        String ip = "188.333";        
+        String[] ipe = ip.split("\\.");        
+        System.out.println(ipe[0]);        
+        Integer q = Integer.parseInt(ipe[0]);        
+        System.out.println(q + 10);        
+    }    
+}
+
+
+public class Main {    
+    public static void main(String[] args) {        
+        String ip = "188.333";        
+        String[] ipe = ip.split("\\.");        
+        System.out.println(ipe[0]);        
+        int q = Integer.parseInt(ipe[0]);        
+        System.out.println(q + 10);        
+    }    
+}
+
+
+
+/*
+ * Для того чтобы выходить в Интернет, каждому компьютеру присваивается так
+ * называемый IP-адрес. Он состоит из четырех целых чисел в диапазоне от 0 до
+ * 255,
+ * разделенных точками. В следующих трех строках показаны три правильных
+ * IP-адреса:
+ * 127.0.0.0
+ * 192.168.0.01
+ * 255.00.255.255
+ * Напишите программу, которая определяет, является ли заданная строка
+ * правильным IP-адресом.
+ * Входные данные
+ * На вход программе подается строка длиной не более 15 символов,
+ * которая включает цифры и точки.
+ * Выходные данные
+ * Если строка является правильным IP-адресом, необходимо вывести YES, иначе NO.
+ */
+
+package lesson2;
+
+public class Task3 {
+public static void main(String[] args) {
+    String ip="300.00.255.255";
+    String[] nums=ip.split("\\.");
     
+    if(nums.length!=4)return;
+    for(String s:nums){
+        int num=Integer.parseInt(s);
+        if(num<0||num>255){
+            System.out.println("неправильный ip");
+            return;
+        }
+    }
+    System.out.println("правильный ip");
 }
-
-
+}
